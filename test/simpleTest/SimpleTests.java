@@ -1,7 +1,10 @@
 package simpleTest;
 
-/**
- * Created by bob.zhu on 2015/10/14.
- */
+import org.junit.Test;
+
 public class SimpleTests {
+    @Test
+    public void should_say_hello() {
+        System.out.println("hello tod");
+    }
 }
