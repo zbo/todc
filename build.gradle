@@ -18,5 +18,6 @@ repositories {
 
 dependencies {
     testCompile 'info.cukes:cucumber-junit:1.2.4'
+    testCompile 'info.cukes:cucumber-java8:1.2.4'
     testCompile 'junit:junit:4.12'
 }

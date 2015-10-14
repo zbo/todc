@@ -1,5 +1,3 @@
-package simpleTest;
-
 import org.junit.Test;
 
 public class SimpleTests {
