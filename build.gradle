@@ -21,3 +21,28 @@ dependencies {
     testCompile 'info.cukes:cucumber-java8:1.2.4'
     testCompile 'junit:junit:4.12'
 }
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+    test {
+        java {
+            srcDirs 'test'
+        }
+        resources {
+            srcDir 'test/resources'
+        }
+    }
+
+}
+//if code structure well no need copy task
+task copyTask(type: Copy) {
+    from 'resources/Simple.feature'
+    into 'build/resources/test/'
+}
